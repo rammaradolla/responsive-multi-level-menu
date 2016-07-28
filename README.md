@@ -10,8 +10,8 @@ This repository has branches for each of the videos in the course. You can use t
 	- [git](http://git-scm.com/)
 	- [gruntjs](http://gruntjs.com/)
 	- [bower](http://bower.io)
-2. Clone this repository into your local machine using the terminal (mac) or Gitbash (PC) `> git clone https://github.com/rammaradolla/SampleWebsite.git`
-3. CD to the folder `cd SampleWebsite`
+2. Clone this repository into your local machine using the terminal (mac) or Gitbash (PC) `> git clone https://github.com/rammaradolla/responsive-multi-level-menu.git`
+3. CD to the folder `cd responsive-multi-level-menu`
 4. Run `> npm install` to install the project dependencies
 4. Run `> bower install` to install the project dependencies
 5. Run `> grunt` command to start the automation
