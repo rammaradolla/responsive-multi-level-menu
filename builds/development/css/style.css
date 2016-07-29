@@ -1,20 +1,68 @@
 @charset "UTF-8";
-/* SETTINGS
- Global...............Globally-available variables and config. */
-@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
 /*GENERIC Normalize.css........A level playing field.
  Box-sizing...........Better default `box-sizing`.
  Resetting styles */
+@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a:focus, a:hover {
+  text-decoration: none; }
+
+/* SETTINGS
+ Global...............Globally-available variables and config. */
 /* _base.scss
  ==============
 Headings.............H1–H6 styles. Media Break points */
 /* OBJECTS
  * Wrappers.............Wrapping and constraining elements.*/
+/* Page-head............The main page header.
+   Page-foot............The main page footer.
+   Buttons..............Button elements.*/
 /* --------------------------------
 
-Primary style
+   Primary style
 
--------------------------------- */
+   -------------------------------- */
 *, *::after, *::before {
   box-sizing: border-box; }
 
@@ -54,9 +102,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* --------------------------------
 
-Main components
+   Main components
 
--------------------------------- */
+   -------------------------------- */
 .cd-main-content, .cd-main-header {
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -639,7 +687,7 @@ Main components
       padding: 0 18% 0 0;
       color: #2e3233;
       border-bottom: none;
-      font-size: .9rem; }
+      font-size: 1.4rem; }
       .cd-primary-nav .cd-secondary-nav a:hover {
         color: #69aa6f; }
     .cd-primary-nav .cd-secondary-nav ul {
@@ -927,9 +975,9 @@ Main components
 
 /* --------------------------------
 
-support for no js
+   support for no js
 
--------------------------------- */
+   -------------------------------- */
 .no-js .cd-primary-nav {
   position: relative;
   height: auto;
@@ -958,47 +1006,3 @@ support for no js
 
 /* TRUMPS
  Text.................Text helpers. */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-a:focus, a:hover {
-  text-decoration: none; }

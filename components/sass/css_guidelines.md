@@ -22,9 +22,10 @@
  * Wrappers.............Wrapping and constraining elements.
  *
  * COMPONENTS
+ * Page sections
  * Page-head............The main page header.
  * Page-foot............The main page footer.
- * Buttons..............Button elements.
+ * widgets....constructed with objects.
  *
  * TRUMPS
  * Text.................Text helpers.
