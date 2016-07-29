@@ -1,11 +1,14 @@
-// style.scss
+// style.scss, This is the main scss file to combine all scss files in order.
 // ==============
   
 //Core partials
-@import "variables";
-@import "mixins";
+@import "settings";
+@import "tools";
+@import "generic";
 @import "base";
-@import "modules";
+@import "objects";
+@import "components";
+@import "trumps";
 
 //reset styles start
 html, body, div, span, applet, object, iframe,

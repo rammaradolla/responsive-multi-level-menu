@@ -1,4 +1,15 @@
+@charset "UTF-8";
+/* SETTINGS
+ Global...............Globally-available variables and config. */
 @import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
+/*GENERIC Normalize.css........A level playing field.
+ Box-sizing...........Better default `box-sizing`.
+ Resetting styles */
+/* _base.scss
+ ==============
+Headings.............H1–H6 styles. Media Break points */
+/* OBJECTS
+ * Wrappers.............Wrapping and constraining elements.*/
 /* --------------------------------
 
 Primary style
@@ -945,6 +956,8 @@ support for no js
   .no-js .nav-is-fixed .cd-primary-nav {
     position: fixed; } }
 
+/* TRUMPS
+ Text.................Text helpers. */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
