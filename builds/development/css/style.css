@@ -50,6 +50,9 @@ a:focus, a:hover {
 
 /* SETTINGS
  Global...............Globally-available variables and config. */
+html {
+  font-size: 62.5%; }
+
 /* _base.scss
  ==============
 Headings.............H1–H6 styles. Media Break points */
@@ -58,16 +61,9 @@ Headings.............H1–H6 styles. Media Break points */
 /* Page-head............The main page header.
    Page-foot............The main page footer.
    Buttons..............Button elements.*/
-/* --------------------------------
-
-   Primary style
-
-   -------------------------------- */
+/*------Navigation Header start-----------------------*/
 *, *::after, *::before {
   box-sizing: border-box; }
-
-html {
-  font-size: 62.5%; }
 
 body {
   font-size: 1.6rem;
