@@ -48,6 +48,9 @@ table {
 a:focus, a:hover {
   text-decoration: none; }
 
+*, *::after, *::before {
+  box-sizing: border-box; }
+
 /* SETTINGS
  Global...............Globally-available variables and config. */
 html {
@@ -58,22 +61,11 @@ html {
 Headings.............H1–H6 styles. Media Break points */
 /* OBJECTS
  * Wrappers.............Wrapping and constraining elements.*/
-/* Page-head............The main page header.
-   Page-foot............The main page footer.
-   Buttons..............Button elements.*/
-/*------Navigation Header start-----------------------*/
-*, *::after, *::before {
-  box-sizing: border-box; }
+/* --------------------------------
 
-body {
-  font-size: 1.6rem;
-  font-family: sans-serif;
-  color: #2e3233;
-  background-color: #ffffff; }
-  @media only screen and (max-width: 1169px) {
-    body.nav-on-left.overflow-hidden {
-      overflow: hidden; } }
+Main objects
 
+-------------------------------- */
 a {
   color: #69aa6f;
   text-decoration: none; }
@@ -96,11 +88,39 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none; }
 
+.cd-logo {
+  position: absolute;
+  top: 12px;
+  left: 5%; }
+  .cd-logo img {
+    display: block; }
+  @media only screen and (max-width: 1169px) {
+    .nav-on-left .cd-logo {
+      left: auto;
+      right: 5%; } }
+  @media only screen and (min-width: 1170px) {
+    .cd-logo {
+      top: 26px;
+      left: 4em; } }
+
+/* Page-head............The main page header.
+   Page-foot............The main page footer.
+   Buttons..............Button elements.*/
 /* --------------------------------
 
-   Main components
+Main components
 
-   -------------------------------- */
+-------------------------------- */
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: #2e3233;
+  background-color: #ffffff; }
+  @media only screen and (max-width: 1169px) {
+    body.nav-on-left.overflow-hidden {
+      overflow: hidden; } }
+
+/*------Navigation Header start-----------------------*/
 .cd-main-content, .cd-main-header {
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -152,21 +172,6 @@ input[type="search"]::-webkit-search-results-decoration {
         content: "";
         display: table;
         clear: both; } }
-
-.cd-logo {
-  position: absolute;
-  top: 12px;
-  left: 5%; }
-  .cd-logo img {
-    display: block; }
-  @media only screen and (max-width: 1169px) {
-    .nav-on-left .cd-logo {
-      left: auto;
-      right: 5%; } }
-  @media only screen and (min-width: 1170px) {
-    .cd-logo {
-      top: 26px;
-      left: 4em; } }
 
 .cd-header-buttons {
   position: absolute;

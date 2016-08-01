@@ -1,2 +1,58 @@
 /* OBJECTS
  * Wrappers.............Wrapping and constraining elements.*/
+
+
+/* --------------------------------
+
+Main objects
+
+-------------------------------- */
+
+a {
+  color: $color-2;
+  text-decoration: none;
+}
+
+img {
+  /* make images responsive */
+  max-width: 100%;
+}
+
+input {
+  font-family: $primary-font;
+  font-size: 1.6rem;
+}
+
+input[type="search"]::-ms-clear {
+  /* removes close icon - IE */
+  display: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.cd-logo {
+  position: absolute;
+  top: 12px;
+  left: 5%;
+
+  img {
+    display: block;
+  }
+
+  @include MQ(maxL) {
+    .nav-on-left & {
+      left: auto;
+      right: 5%;
+    }
+  }
+
+  @include MQ(L) {
+    top: 26px;
+    left: 4em;
+  }
+}

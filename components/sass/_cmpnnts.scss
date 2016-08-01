@@ -2,61 +2,30 @@
    Page-foot............The main page footer.
    Buttons..............Button elements.*/
 
+/* --------------------------------
+
+Main components
+
+-------------------------------- */
+
+body {
+  font: {
+    size: 1.6rem;
+    family: $primary-font; // variables inside partials > _variables.scss
+  }
+  color: $color-1;
+  background-color: $color-4;
+
+  @include MQ(maxL) { // layout mixins inside partials > _layout.scss
+    &.nav-on-left.overflow-hidden {
+      overflow: hidden;
+    }
+  }
+}
+
 /*------Navigation Header start-----------------------*/
 
-   *, *::after, *::before {
-     box-sizing: border-box;
-   }
-
-   body {
-     font: {
-       size: 1.6rem;
-       family: $primary-font; // variables inside partials > _variables.scss
-     }
-     color: $color-1;
-     background-color: $color-4;
-
-     @include MQ(maxL) { // layout mixins inside partials > _layout.scss
-       &.nav-on-left.overflow-hidden {
-         overflow: hidden;
-       }
-     }
-   }
-
-   a {
-     color: $color-2;
-     text-decoration: none;
-   }
-
-   img {
-     /* make images responsive */
-     max-width: 100%;
-   }
-
-   input {
-     font-family: $primary-font;
-     font-size: 1.6rem;
-   }
-
-   input[type="search"]::-ms-clear {
-     /* removes close icon - IE */
-     display: none;
-   }
-
-   input[type="search"]::-webkit-search-decoration,
-   input[type="search"]::-webkit-search-cancel-button,
-   input[type="search"]::-webkit-search-results-button,
-   input[type="search"]::-webkit-search-results-decoration {
-     display: none;
-   }
-
-   /* --------------------------------
-
-   Main components
-
-   -------------------------------- */
-
-   .cd-main-content, .cd-main-header {
+.cd-main-content, .cd-main-header {
      /* Force Hardware Acceleration in WebKit */
      @include transform(translateZ(0));
      will-change: transform;
@@ -102,27 +71,7 @@
      }
    }
 
-   .cd-logo {
-     position: absolute;
-     top: 12px;
-     left: 5%;
 
-     img {
-       display: block;
-     }
-
-     @include MQ(maxL) {
-       .nav-on-left & {
-         left: auto;
-         right: 5%;
-       }
-     }
-
-     @include MQ(L) {
-       top: 26px;
-       left: 4em;
-     }
-   }
 
    .cd-header-buttons {
      position: absolute;

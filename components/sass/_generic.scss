@@ -49,4 +49,9 @@ table {
 a:focus, a:hover {
  text-decoration: none;
 }
+
+*, *::after, *::before {
+ box-sizing: border-box;
+}
+
 //reset styles end
